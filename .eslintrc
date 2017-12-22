@@ -1,28 +1,31 @@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
-    "arrow-body-style": [0],
-    "consistent-return": [0],
-    "generator-star-spacing": [0],
-    "global-require": [1],
+    "jsx-a11y/href-no-hash": [0],
     "import/extensions": [0],
-    "import/no-extraneous-dependencies": [0],
+    "import/first": [0],
     "import/no-unresolved": [0],
-    "import/prefer-default-export": [0],
+    "import/no-extraneous-dependencies": [0],
     "jsx-a11y/no-static-element-interactions": [0],
-    "no-bitwise": [0],
-    "no-cond-assign": [0],
-    "no-else-return": [0],
-    "no-nested-ternary": [0],
-    "no-restricted-syntax": [0],
-    "no-use-before-define": [0],
-    "react/forbid-prop-types": [0],
+    "jsx-quotes": [2, "prefer-single"],
+    "quotes": [1, "single"],
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
-    "react/jsx-no-bind": [0],
-    "react/prefer-stateless-function": [0],
-    "react/prop-types": [0],
-    "require-yield": [1]
+    "react/jsx-indent-props": [2, 2],
+    "react/forbid-prop-types": [0],
+    "max-len": [2, 120],
+    "no-console": [0],
+    "linebreak-style": [0],
+
+    // 暂时关闭
+    "react/no-array-index-key": [0],
+    "react/sort-comp": [0],
+    "no-return-assign": [0],
+    "no-unused-expressions": [0]
   },
   "parserOptions": {
     "ecmaFeatures": {
